@@ -1,0 +1,269 @@
+/* for @media (max-width: 480px) */
+:root {
+  /* Colors */
+  --mainColor: hsl(300, 43%, 22%);
+  --accentFontColor: hsl(333, 80%, 67%);
+  --blockFontColor: hsl(303, 10%, 53%);
+  --mainTextColor: hsl(300, 24%, 96%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --attributionColor: hsl(228, 45%, 44%);
+
+  /* Fonts  */
+  --mainFontFamily: "League Spartan", sans-serif;
+}
+
+/* General options */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: var(--mainFontFamily);
+  color: var(--mainColor);
+  font-size: 16px;
+  padding: 10px;
+  background-image: url(images/bg-pattern-top-mobile.svg),
+    url(images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-size: 50% auto, 70% auto;
+}
+
+/* Main section */
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Header section */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Star-rating section */
+#star-section {
+  margin: 30px auto;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--mainTextColor);
+  border: none;
+  border-radius: 8px;
+}
+
+.star-rating .stars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.star-rating .stars img {
+  margin-right: 8px;
+}
+
+.star-rating .star-text {
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Opinion section */
+.opinion-section {
+  margin: 40px auto;
+}
+
+.opinion {
+  width: 100%;
+  margin: 15px auto;
+  padding: 25px;
+  background-color: var(--mainColor);
+  border: none;
+  border-radius: 8px;
+  color: var(--mainTextColor);
+}
+
+.opinion img {
+  border-radius: 50%;
+  border: none;
+  width: 40px;
+  margin-right: 20px;
+}
+
+.opinion-text {
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.person-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.verified {
+  color: var(--accentFontColor);
+}
+
+@media (min-width: 1025px) {
+  body {
+    background-image: url(images/bg-pattern-top-desktop.svg),
+      url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    background-size: 50% auto, 50% auto;
+  }
+
+  /* header and star section */
+  h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .header-star-big-screen {
+    position: absolute;
+    top: 118px;
+    left: 165px;
+    width: 1110px;
+    height: 245px;
+  }
+
+  .header-star-group-big-screen {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 445px;
+    height: 245px;
+  }
+
+  .intro-text {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    letter-spacing: -0.63px;
+    line-height: 25px;
+    font-weight: 500;
+    color: var(--blockFontColor);
+    display: inline-block;
+    width: 400px;
+  }
+
+  .intro-text p {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .star-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #star-section {
+    position: absolute;
+    top: 27px;
+    left: 570px;
+    width: 540px;
+    height: 200px;
+    font-size: 1.1rem;
+  }
+
+  .star-rating .stars {
+    margin-bottom: 0;
+  }
+
+  .star-rating {
+    align-items: center;
+    position: absolute;
+    top: -50px;
+    left: 60px;
+    width: 445px;
+    height: 56px;
+    overflow: hidden;
+  }
+
+  .two {
+    align-items: center;
+    position: absolute;
+    top: 22px;
+    left: 108px;
+    width: 445px;
+    height: 56px;
+    overflow: hidden;
+  }
+
+  .three {
+    align-items: center;
+    position: absolute;
+    top: 94px;
+    left: 155px;
+    width: 445px;
+    height: 56px;
+    overflow: hidden;
+  }
+
+  /* opinion section */
+
+  .opinion-section {
+    margin: 40px auto;
+  }
+
+  .colton-card {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    width: 350px;
+  }
+
+  .irene-card {
+    position: absolute;
+    top: 270px;
+    left: 410px;
+    width: 350px;
+  }
+
+  .anne-card {
+    position: absolute;
+    top: 290px;
+    left: 820px;
+    width: 350px;
+  }
+}
