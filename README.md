@@ -31,5 +31,6 @@ You can use any tools you like to help you complete the challenge. So if you've 
 ## Author
 
 - Website - [Andrei Martinenko](https://www.frontender.biz)
-- Github - [@AxinitM](https://www.frontendmentor.io/profile/AxinitM)
-- Frontend Mentor - [@AxinitM](https://github.com/AxinitM)
+- Github - [@AxinitM](https://github.com/AxinitM)
+- Frontend Mentor - [@AxinitM](https://www.frontendmentor.io/profile/AxinitM)
+
