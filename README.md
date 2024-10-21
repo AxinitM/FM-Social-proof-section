@@ -19,7 +19,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 ## Links
 
-([Social proof section page](https://axinitm.github.io/FM-Social-proof-section/))
+[Social proof section page](https://axinitm.github.io/FM-Social-proof-section/)
 
 ## Built with
 
